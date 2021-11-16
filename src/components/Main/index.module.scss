@@ -1,7 +1,8 @@
-@import url("../../styles/base.scss");
+@import "../../styles/base.scss";
 
 .main {
   display: flex;
   flex: 1 0 0;
+  margin-left: 24px;
   @extend .block;
 }
