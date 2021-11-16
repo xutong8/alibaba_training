@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <div className={styles.main}>
       <Routes>
-        <Route path="/github" element={<Github />} />
-        <Route path="/" element={<Github />} />
+        <Route path="/alibaba_training/github" element={<Github />} />
+        <Route path="/alibaba_training/" element={<Github />} />
       </Routes>
     </div>
   );
