@@ -22,4 +22,10 @@
   .table {
     margin-top: 16px;
   }
+
+  .bar {
+    margin-top: 16px;
+    height: 400px;
+    flex-shrink: 0;
+  }
 }

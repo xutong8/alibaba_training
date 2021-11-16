@@ -11,6 +11,7 @@ import {
 } from "@/constants";
 import { Select } from "antd";
 import CustomTable from "@/components/CustomTable";
+import BarChart from "@/components/BarChart";
 
 const { Option } = Select;
 
@@ -51,6 +52,7 @@ const Github = () => {
     const res = (await httpRequest.get(
       `/search/repositories?q=language:${language}&sort=${sort}&order=${order}&per_page=10&page=${page}`
     )) as any;
+
     setDataSource(res?.data?.items ?? []);
     setTotal(res?.data?.total_count ?? 0);
   };
@@ -100,6 +102,39 @@ const Github = () => {
           page={page}
           total={total}
           onChange={handlePageChange}
+        />
+      </div>
+      <div className={styles.bar}>
+        <BarChart
+          dataSource={dataSource.map((item) => ({
+            name: item?.name ?? "",
+            stars: item?.stargazers_count ?? 0,
+          }))}
+          xField="name"
+          yField="stars"
+          containerId="starId"
+        />
+      </div>
+      <div className={styles.bar}>
+        <BarChart
+          dataSource={dataSource.map((item) => ({
+            name: item?.name ?? "",
+            forks: item?.forks ?? 0,
+          }))}
+          xField="name"
+          yField="forks"
+          containerId="forkId"
+        />
+      </div>
+      <div className={styles.bar}>
+        <BarChart
+          dataSource={dataSource.map((item) => ({
+            name: item?.name ?? "",
+            open_issues: item?.open_issues ?? 0,
+          }))}
+          xField="name"
+          yField="open_issues"
+          containerId="issueId"
         />
       </div>
     </div>

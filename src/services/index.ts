@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 
 const BASE_URL = "https://api.github.com/";
 
-const TIME_OUT = 5000;
+const TIME_OUT = 10000;
 
 const instance = axios.create({
   baseURL: BASE_URL,

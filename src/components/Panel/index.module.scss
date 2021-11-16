@@ -2,6 +2,7 @@
 
 .panel {
   width: 200px;
+  flex-shrink: 0;
   @extend .block;
 
   .select {
@@ -12,5 +13,9 @@
       font-size: 16px;
       font-weight: 400;
     }
+  }
+
+  .time {
+    margin-top: 32px;
   }
 }
