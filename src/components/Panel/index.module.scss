@@ -1,0 +1,16 @@
+@import url("../../styles/base.scss");
+
+.panel {
+  width: 200px;
+  @extend .block;
+
+  .select {
+    display: flex;
+    align-items: center;
+
+    .desc {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

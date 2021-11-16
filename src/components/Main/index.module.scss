@@ -1,0 +1,7 @@
+@import url("../../styles/base.scss");
+
+.main {
+  display: flex;
+  flex: 1 0 0;
+  @extend .block;
+}
