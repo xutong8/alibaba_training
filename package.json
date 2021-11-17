@@ -79,8 +79,8 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
-    "start": "PUBLIC_URL=/alibaba_training node scripts/start.js",
-    "build": "BUILD_PATH=docs PUBLIC_URL=/alibaba_training node scripts/build.js",
+    "start": "cross-env PUBLIC_URL=/alibaba_training node scripts/start.js",
+    "build": "cross-env BUILD_PATH=docs PUBLIC_URL=/alibaba_training node scripts/build.js",
     "test": "node scripts/test.js",
     "lint": "eslint src/** --env browser --ext .ts,.tsx,.js,.jsx ",
     "lint:fix": "eslint src/** --env browser --ext .ts,.tsx,.js,.jsx --fix",
@@ -114,6 +114,7 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "cross-env": "^7.0.3",
     "eslint-config-alloy": "^4.4.0",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0"
