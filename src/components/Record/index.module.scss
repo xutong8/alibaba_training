@@ -2,4 +2,16 @@
   margin-top: 16px;
   display: flex;
   flex-direction: column;
+
+  .btn {
+    padding: 8px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 900;
+  }
 }

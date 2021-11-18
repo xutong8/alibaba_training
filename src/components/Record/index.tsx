@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 const Record = () => {
   // 处理按钮点击事件
   const handleButtonClick = async () => {
-    let stream = await navigator.mediaDevices.getDisplayMedia({
+    const stream = await navigator.mediaDevices.getDisplayMedia({
       video: true,
     });
 
@@ -12,7 +12,7 @@ const Record = () => {
     const mime = MediaRecorder.isTypeSupported("video/webm; codecs=vp9")
       ? "video/webm; codecs=vp9"
       : "video/webm";
-    let mediaRecorder = new MediaRecorder(stream, {
+    const mediaRecorder = new MediaRecorder(stream, {
       mimeType: mime,
     });
     // 存储数据
@@ -22,10 +22,10 @@ const Record = () => {
     });
 
     mediaRecorder.addEventListener("stop", () => {
-      let blob = new Blob(chunks, {
+      const blob = new Blob(chunks, {
         type: chunks[0].type,
       });
-      let url = URL.createObjectURL(blob);
+      const url = URL.createObjectURL(blob);
 
       const video = document.querySelector("video") as HTMLVideoElement;
       video.src = url;
