@@ -23,6 +23,7 @@
     "max-params": "off",
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "off",
     "react/no-namespace": "off",
-    "react/no-unstable-nested-components": "off"
+    "react/no-unstable-nested-components": "off",
+    "no-undef": "off"
   }
 }
