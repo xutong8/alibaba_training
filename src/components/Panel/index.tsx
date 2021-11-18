@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import { Select } from "antd";
 import { DEFAULT_DATA_SET } from "@/constants";
 import Clock from "react-clock";
+import Record from "../Record";
 
 const { Option } = Select;
 
@@ -32,6 +33,9 @@ const Panel = () => {
       </div>
       <div className={styles.time}>
         <Clock value={value} />
+      </div>
+      <div className={styles.record}>
+        <Record />
       </div>
     </div>
   );
