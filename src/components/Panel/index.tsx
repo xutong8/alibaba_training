@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./index.module.scss";
-import { Select } from "antd";
+import { Button, Select } from "antd";
 import { DEFAULT_DATA_SET } from "@/constants";
 import Clock from "react-clock";
 import Record from "../Record";
@@ -23,6 +23,10 @@ const Panel = () => {
     };
   }, []);
 
+  const handleEnterStockSystem = () => {
+    window.location.href = "https://xutong8.github.io/stock_dashboard/";
+  };
+
   return (
     <div className={styles.panel}>
       <div className={styles.select}>
@@ -36,6 +40,11 @@ const Panel = () => {
       </div>
       <div className={styles.record}>
         <Record />
+      </div>
+      <div className={styles.link}>
+        <Button type="primary" onClick={handleEnterStockSystem}>
+          股票分析系统
+        </Button>
       </div>
     </div>
   );
