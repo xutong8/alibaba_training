@@ -1,0 +1,79 @@
+.no-graph-data-message{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.graph.card-container .card-body{
+    position:relative;
+}
+
+canvas.myChart{
+    max-height: 325px;
+    min-height: 325px;
+}
+
+.main__chart{
+    pointer-events: none;
+}
+
+.main__chart-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.main__chart-select{
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+}
+
+.ds-block{
+    display: block;
+    pointer-events: none;
+}
+
+.ds-none{
+    display: none;
+    pointer-events: none;
+}
+
+@media(max-width:991px){
+    canvas.myChart{
+        max-height: none;
+        min-height: unset;
+    }
+    .main__chart{
+        margin-top: 15px;
+    }
+    .main__chart-select{
+        position: relative;
+        right: 0;
+        width: 100%;
+    }
+    .no-graph-data-message{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .no-data-message{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
