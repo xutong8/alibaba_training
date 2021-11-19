@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/alibaba_training/static/css/main.ba5bd735.chunk.css",
+    "main.js": "/alibaba_training/static/js/main.a99f8d66.chunk.js",
+    "main.js.map": "/alibaba_training/static/js/main.a99f8d66.chunk.js.map",
+    "runtime-main.js": "/alibaba_training/static/js/runtime-main.467fbe9e.js",
+    "runtime-main.js.map": "/alibaba_training/static/js/runtime-main.467fbe9e.js.map",
+    "static/css/2.ed965d13.chunk.css": "/alibaba_training/static/css/2.ed965d13.chunk.css",
+    "static/js/2.2e299747.chunk.js": "/alibaba_training/static/js/2.2e299747.chunk.js",
+    "static/js/2.2e299747.chunk.js.map": "/alibaba_training/static/js/2.2e299747.chunk.js.map",
+    "static/js/3.e4c4a7df.chunk.js": "/alibaba_training/static/js/3.e4c4a7df.chunk.js",
+    "static/js/3.e4c4a7df.chunk.js.map": "/alibaba_training/static/js/3.e4c4a7df.chunk.js.map",
+    "index.html": "/alibaba_training/index.html",
+    "static/css/2.ed965d13.chunk.css.map": "/alibaba_training/static/css/2.ed965d13.chunk.css.map",
+    "static/css/main.ba5bd735.chunk.css.map": "/alibaba_training/static/css/main.ba5bd735.chunk.css.map",
+    "static/js/2.2e299747.chunk.js.LICENSE.txt": "/alibaba_training/static/js/2.2e299747.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.467fbe9e.js",
+    "static/css/2.ed965d13.chunk.css",
+    "static/js/2.2e299747.chunk.js",
+    "static/css/main.ba5bd735.chunk.css",
+    "static/js/main.a99f8d66.chunk.js"
+  ]
+}
